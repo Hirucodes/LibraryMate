@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Mate - Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/library mate.png" width="150px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Account.html">Accounts</a></li>
+                    <li><a href="Add_book.html">Add Book</a></li>
+                    <li><a href="Order.html">Order</a></li>
+                    <li><a href="Remove.html">Remove Students</a></li>
+                    <li><a href="Search_Books.html">Search Books</a></li>
+                    <li><a href="View_Reports.html">View Reports</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!----------------- Search Books Page ------------->
+    <div class="Search-Books-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image_6.jpg" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <div class="Search-Books">
+                        <h2 class="title">Search Books</h2>
+
+                        <form>
+                            <div class="form">
+                                <input type="text" name="value" placeholder="Book Name:">
+                            </div>
+
+                            <div class="form">
+                                <input type="text" name="value" placeholder="Author:">
+                            </div>
+
+                            <div class="form">
+                                <label>Category:</label>
+                                <select id="category" name="category">
+                                    <option value="All Categories">All Categories</option>
+                                    <option value="fiction">Fiction</option>
+                                    <option value="non-fiction">Non-Fiction</option>
+                                    <option value="mystery">Mystery</option>
+                                    <option value="fantasy">Fantasy</option>
+                                    <option value="science-fiction">Science Fiction</option>
+                                    <option value="history">History</option>
+                                    <option value="biography">Biography</option>
+                                    <option value="self-help">Self-Help</option>
+                                </select>
+
+                            </div>
+                        </form>
+
+                        <!--------------- Search Books button------------>
+
+                        <a href="#" class="btn">Search Books</a>
+                        <hr id="Indicator-6">
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--------------- Footer ------------>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <img src="images/library mate2.png">
+                    <p align="center">© Code-Crushers ~ Library Management System.</p>
+                    <p>Our purpose is to enrich lives through seamless access to quality products and unparalleled
+                        shopping experiences.</p>
+                </div>
+            </div><br>
+            <hr>
+        </div>
+    </div>
+
+
+    <!----------JS for toggle menu---------->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>
